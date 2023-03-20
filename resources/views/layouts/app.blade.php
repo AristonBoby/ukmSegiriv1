@@ -27,7 +27,7 @@
         <!-- Google Font -->
         <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,700,300italic,400italic,600italic">
 
-        @livewireStyles
+
         <!-- jQuery 3 -->
         <script src="{{ asset('adminlte/bower_components/jquery/dist/jquery.min.js') }}"></script>
         <!-- jQuery UI 1.11.4 -->
@@ -67,6 +67,7 @@
         <script src="{{ asset('adminlte/dist/js/demo.js') }}"></script>
       </head>
     <body class="hold-transition skin-blue sidebar-mini sidebar-collapse">
+        @livewireStyles
         <div class="wrapper">
           <header class="main-header">
             <a href="index2.html" class="logo">

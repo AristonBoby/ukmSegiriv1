@@ -5,7 +5,7 @@
                 <h3 class="box-title">Input <b>Data</b> </h3>
             </div>
             <div class="box-body">
-                <form wire:submit.prevent='simpan' class="form-horizontal">
+                <form wire:submit.prevent="store" class="form-horizontal">
                     <div class="form-group" style="margin-bottom:8px;">
                         <label class="col-sm-4 control-label">Nama</label>
                         <div class="col-lg-7">
@@ -86,8 +86,7 @@
                     </div>
                     <div style="margin-top:40px;">
                         <div>
-                            <button type="submit" class='pull-right btn btn-primary btn-sm'><i class="fa fa-save"></i> Simpan</button>
-                            <button type="button" class='pull-right btn btn-danger btn-sm' style="margin-right:10px;"><i class="fa fa-times"></i> Batal</button>
+                            <button class='pull-right btn btn-primary btn-sm'><i class="fa fa-save"></i> Simpan</button>
                         </div>
                     </div>
                 </form>
