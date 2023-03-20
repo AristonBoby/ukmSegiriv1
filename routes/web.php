@@ -18,7 +18,7 @@ Route::get('/', function () {
 });
 
 Route::get('/home', [App\Http\Controllers\route\home::class, 'index'])->name('home');
-
+Route::get('/pendaftaran', [App\Http\Controllers\route\pendaftaran::class, 'index'])->name('pendaftaran');
 Route::middleware([
     'auth:sanctum',
     config('jetstream.auth_session'),
