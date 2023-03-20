@@ -128,5 +128,6 @@
           <div class="control-sidebar-bg"></div>
         </div>
         <!-- ./wrapper -->
+        @livewireScripts
     </body>
 </html>
