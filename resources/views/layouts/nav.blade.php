@@ -8,7 +8,7 @@
       </a>
     </li>
     <li>
-      <a href="#">
+      <a href="{{ route('pendaftaran') }}">
         <i class="fa fa-edit"></i> <span>Pendaftaran</span>
       </a>
     </li>
