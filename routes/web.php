@@ -17,6 +17,8 @@ Route::get('/', function () {
     return view('welcome');
 });
 
+Route::get('/home', [App\Http\Controllers\route\home::class, 'index'])->name('home');
+
 Route::middleware([
     'auth:sanctum',
     config('jetstream.auth_session'),
