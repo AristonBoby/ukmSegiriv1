@@ -10,4 +10,6 @@ class Table extends Component
     {
         return view('livewire.pendaftaran.table');
     }
+
+
 }
