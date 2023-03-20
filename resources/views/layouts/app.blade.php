@@ -65,9 +65,10 @@
         <script src="{{ asset('adminlte/dist/js/pages/dashboard.js') }}"></script>
         <!-- AdminLTE for demo purposes -->
         <script src="{{ asset('adminlte/dist/js/demo.js') }}"></script>
+        @livewireStyles
       </head>
     <body class="hold-transition skin-blue sidebar-mini sidebar-collapse">
-        @livewireStyles
+
         <div class="wrapper">
           <header class="main-header">
             <a href="index2.html" class="logo">

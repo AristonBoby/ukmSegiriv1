@@ -16,5 +16,8 @@
 @endsection
 
 @section('content')
-    <livewire:pendaftaran.form-input>
+    <div class="row">
+        <livewire:pendaftaran.form-input>
+        <livewire:pendaftaran.table>
+    </div>
 @endsection
