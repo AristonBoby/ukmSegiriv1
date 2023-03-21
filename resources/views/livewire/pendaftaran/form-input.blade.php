@@ -1,4 +1,4 @@
-<div class="col-lg-3 col-md-12">
+<div class="col-lg-4 col-md-12">
     <div class="box box-primary">
         <div class="box-header with-border">
             <h3 class="box-title">Input <b>Data</b> </h3>
@@ -8,25 +8,25 @@
                 <div class="form-group" style="margin-bottom:8px;">
                     <label class="col-sm-4 control-label">Nama</label>
                     <div class="col-lg-7">
-                        <input wire:model.defer="nama" type="text" class=" form-control" placeholder="Nama Pasien">
+                        <input wire:model.defer="nama" type="text" class=" form-control input-sm" placeholder="Nama Pasien">
                     </div>
                 </div>
                 <div class="form-group" style="margin-bottom:8px;">
                     <label class="col-sm-4 control-label">Tempat Lahir</label>
                     <div class="col-lg-7">
-                        <input wire:model.defer="tmpLahir" type="text" class=" form-control" placeholder="Tempat Lahir">
+                        <input wire:model.defer="tmpLahir" type="text" class=" form-control input-sm" placeholder="Tempat Lahir">
                     </div>
                 </div>
                 <div class="form-group" style="margin-bottom:8px;">
                     <label class="col-sm-4 control-label">Tanggal Lahir</label>
                     <div class="col-lg-7">
-                        <input wire.model.defer="tglLahir" type="date" class="form-control" placeholder="Nama Pasien">
+                        <input wire.model.defer="tglLahir" type="date" class="form-control input-sm" placeholder="Nama Pasien">
                     </div>
                 </div>
                 <div class="form-group" style="margin-bottom:8px;">
                     <label class="col-sm-4 control-label">Jenis Kelamin</label>
                     <div class="col-lg-7">
-                        <select class="form-control" wire:model.defer="jenkel">
+                        <select class="form-control input-sm" wire:model.defer="jenkel">
                             <option value="">--Pilih Salah Satu--</option>
                             <option value="L">Laki-laki</option>
                             <option value="P">Perempuan</option>
@@ -36,25 +36,25 @@
                 <div class="form-group" style="margin-bottom:8px;">
                     <label class="col-sm-4 control-label">Kepala Keluarga</label>
                     <div class="col-lg-7">
-                        <input wire:model.defer="kepalaKeluarga" type="text" class=" form-control" placeholder="Kepala Keluarga">
+                        <input wire:model.defer="kepalaKeluarga" type="text" class="input-sm form-control" placeholder="Kepala Keluarga">
                     </div>
                 </div>
                 <div class="form-group" style="margin-bottom:8px;">
                     <label class="col-sm-4 control-label">No. Kartu Keluarga</label>
                     <div class="col-lg-7">
-                        <input wire:model.defer="noKk" type="text" class=" form-control" placeholder="Nomor Kartu Keluarga">
+                        <input wire:model.defer="noKk" type="text" class="input-sm form-control" placeholder="Nomor Kartu Keluarga">
                     </div>
                 </div>
                 <div class="form-group" style="margin-bottom:8px;">
                     <label class="col-sm-4 control-label">NIK</label>
                     <div class="col-lg-7">
-                        <input type="text" class=" form-control" placeholder="NIK">
+                        <input type="text" class="input-sm form-control" placeholder="NIK">
                     </div>
                 </div>
                 <div class="form-group" style="margin-bottom:8px;">
                     <label class="col-sm-4 control-label">Provinsi</label>
                     <div class="col-lg-7">
-                        <select class="form-control">
+                        <select class="input-sm form-control">
                             <option value="">--Pilih Provinsi--</option>
                         </select>
                     </div>
@@ -62,7 +62,7 @@
                 <div class="form-group" style="margin-bottom:8px;">
                     <label class="col-sm-4 control-label">Kota</label>
                     <div class="col-lg-7">
-                        <select class="form-control">
+                        <select class="input-sm form-control">
                             <option value="">--Pilih Kota--</option>
                         </select>
                     </div>
@@ -70,7 +70,7 @@
                 <div class="form-group" style="margin-bottom:8px;">
                     <label class="col-sm-4 control-label">Kecamatan</label>
                     <div class="col-lg-7">
-                        <select class="form-control">
+                        <select class="input-sm form-control">
                             <option value="">--Pilih Kecamatan--</option>
                         </select>
                     </div>
@@ -78,7 +78,7 @@
                 <div class="form-group" style="margin-bottom:8px;">
                     <label class="col-sm-4 control-label">Kelurahan</label>
                     <div class="col-lg-7">
-                        <select class="form-control">
+                        <select class="input-sm form-control">
                             <option value="">--Pilih Kelurahan--</option>
                         </select>
                     </div>
