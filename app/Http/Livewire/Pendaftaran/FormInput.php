@@ -11,13 +11,24 @@ class FormInput extends Component
     public $jenkel;
     public $kepalaKeluarga;
     public $noKk;
+
+    protected $rules = ([
+        'nama'      => 'required',
+        'tmpLahir'  => 'required',
+    ]);
+
+    protected $message = [
+        'nama.require'  => 'Nama wajib diisi'
+    ];
     public function render()
     {
         return view('livewire.pendaftaran.form-input');
     }
 
+
+
     public function store()
     {
-
+        $this->validate();
     }
 }
