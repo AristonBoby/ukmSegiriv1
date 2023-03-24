@@ -22,15 +22,20 @@
                 <div class="form-group" style="margin-bottom:4px;">
                     <label class="col-sm-4 control-label">Tanggal Lahir</label>
                     <div class="col-lg-7 @error('tglLahir') has-error @enderror">
-                        <input wire.model.defer="tglLahir" type="text" class="tgl form-control input-md" placeholder="dd-mm-yyyy">
-                        @error('tglLahir')<p class="help-block">{{ $message }}</p> @enderror
+                        <div class="input-group date">
+                            <input wire.model.defer="tglLahir" type="text" readonly class="tgl form-control input-md" placeholder="dd-mm-yyyy">
+                            <div class="input-group-addon">
+                                <i class="fa fa-calendar"></i>
+                            </div>
+                            @error('tglLahir')<p class="help-block">{{ $message }}</p> @enderror
+                        </div>
                     </div>
                 </div>
                 <div class="form-group" style="margin-bottom:4px;">
                     <label class="col-sm-4 control-label">Jenis Kelamin</label>
                     <div class="col-lg-7 @error('jenkel')has-error @enderror">
                         <select class="form-control input-md" wire:model.defer="jenkel">
-                            <option value="">--Pilih Salah Satu--</option>
+                            <option value="">--- Pilih Salah Satu ---</option>
                             <option value="L">Laki-laki</option>
                             <option value="P">Perempuan</option>
                         </select>
@@ -47,7 +52,7 @@
                 <div class="form-group" style="margin-bottom:4px;">
                     <label class="col-sm-4 control-label">No. Kartu Keluarga</label>
                     <div class="col-lg-7 @error('noKk')has-error @enderror">
-                        <input wire:model.defer="noKk" type="text" class="input-md form-control" placeholder="Nomor Kartu Keluarga">
+                        <input wire:model.defer="noKk" type="text" class="input-md form-control nomor" placeholder="Nomor Kartu Keluarga">
                         @error('noKk')<p class="help-block">{{ $message }}</p> @enderror
                     </div>
                 </div>
@@ -107,3 +112,23 @@
         </div>
     </div>
 </div>
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.6.4/css/bootstrap-datepicker.css" type="text/css" />
+<script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.6.4/js/bootstrap-datepicker.js" type="text/javascript"></script>
+<script type="text/javascript">
+    $(function () {
+        $('.tgl').datepicker({
+            format: "dd-mm-yyyy",
+            endDate: "dateToday",
+            autoclose : true,
+        });
+    });
+</script>
+<script type="text/javascript">
+        $(document).ready(function(){
+          $(".nomor").keypress(function (e) {
+            if (e.which != 8 && e.which != 0 && (e.which < 48 || e.which > 57)) {
+              return false;
+            }
+          });
+</script>

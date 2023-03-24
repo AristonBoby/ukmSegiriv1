@@ -22,11 +22,3 @@
     </div>
 @endsection
 
-<script type="text/javascript">
-    $(function () {
-        $('.tgl').datepicker({
-            format: "dd-mm-yyyy",
-            endDate: "dateToday",
-        });
-    });
-</script>
