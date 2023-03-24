@@ -22,7 +22,7 @@
                 <div class="form-group" style="margin-bottom:4px;">
                     <label class="col-sm-4 control-label">Tanggal Lahir</label>
                     <div class="col-lg-7 @error('tglLahir') has-error @enderror">
-                        <input wire.model.defer="tglLahir" type="date" class="form-control input-md" placeholder="Nama Pasien">
+                        <input wire.model.defer="tglLahir" type="text" class="tgl form-control input-md" placeholder="dd-mm-yyyy">
                         @error('tglLahir')<p class="help-block">{{ $message }}</p> @enderror
                     </div>
                 </div>
