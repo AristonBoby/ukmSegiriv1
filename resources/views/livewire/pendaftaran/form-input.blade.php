@@ -27,13 +27,13 @@
                             <div class="input-group-addon">
                                 <i class="fa fa-calendar"></i>
                             </div>
-                            @error('tglLahir')<p class="help-block">{{ $message }}</p> @enderror
                         </div>
+                        @error('tglLahir')<p class="help-block">{{ $message }}</p> @enderror
                     </div>
                 </div>
                 <div class="form-group" style="margin-bottom:4px;">
                     <label class="col-sm-4 control-label">Jenis Kelamin</label>
-                    <div class="col-lg-7 @error('jenkel')has-error @enderror">
+                    <div class="col-lg-7 @error('jenkel') has-error @enderror">
                         <select class="form-control input-md" wire:model.defer="jenkel">
                             <option value="">--- Pilih Salah Satu ---</option>
                             <option value="L">Laki-laki</option>
