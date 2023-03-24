@@ -16,31 +16,42 @@
                 </div>
             </div>
             <div class="col-lg-12 col-md-12 col-sm-12">
-                <table class="table table-condensed table-stripped table-hover">
+                <table class="table table-hover table-bordered table-striped table-hover">
                     <thead>
-                        <tr class="text-center">
+                        <tr class="align-center">
                             <th>No.</th>
                             <th>Nama</th>
                             <th>Tgl Lahir</th>
                             <th>Umur</th>
                             <th>Jankel</th>
                             <th>NIK</th>
-                            <th>KK</th>
+                            <th>Nomor KK</th>
                             <th>Alamat</th>
                             <th>Action</th>
                         </tr>
                     </thead>
                     <tbody>
-                        <tr>
-                            <td>1</td>
+                        <tr class="text-uppercase">
+                            <td>1.</td>
                             <td>Ariston Boby Willy Munte</td>
                             <td>19-07-1994</td>
                             <td>28</td>
                             <td>Laki-laki</td>
                             <td>1217048787880001</td>
                             <td>1217048787880001</td>
-                            <td>Jl. Perjuangan Gerilya No.25A RT.104 </td>
-                            <td><button class="btn btn-danger btn-xs"><i class="text-lg fa fa-trash"></i></button></td>
+                            <td width="250">Jl. Perjuangan Gerilya No.25A RT.104 Jl. Perjuangan Gerilya No.25A RT.104 </td>
+                            <td><button class="btn btn-danger"><i class="fa fa-trash"></i></button></td>
+                        </tr>
+                        <tr class="text-uppercase">
+                            <td>1.</td>
+                            <td>Ariston Boby Willy Munte</td>
+                            <td>19-07-1994</td>
+                            <td>28</td>
+                            <td>Laki-laki</td>
+                            <td>1217048787880001</td>
+                            <td>1217048787880001</td>
+                            <td width="250">Jl. Perjuangan Gerilya No.25A RT.104 Jl. Perjuangan Gerilya No.25A RT.104 </td>
+                            <td><button class="btn btn-danger"><i class="fa fa-trash"></i></button></td>
                         </tr>
                     </tbody>
                 </table>
